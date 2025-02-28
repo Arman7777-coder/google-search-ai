@@ -1,0 +1,477 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+/*Welcome page styles*/
+.welcome-page body {
+    color: #333;
+    background-color: #f7f8f9;
+    width: 1440px;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Welcome page Header & Navigation */
+.welcome-page header {
+    padding: 20px 0;
+}
+.welcome-page nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0 20px;
+}
+.welcome-page .logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.welcome-page nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.welcome-page nav ul li {
+    margin-left: 20px;
+}
+.welcome-page nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.welcome-page .btn {
+    background-color: #2463eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+}
+/*Welcome page Hero Section */
+.welcome-page  .hero {
+            padding: 60px 0;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+.welcome-page .title-wrapper {
+            position: relative;
+            flex: 1;
+            width: 50%;
+        }
+
+.title-wrapper .underline img {
+    position: absolute;
+    left: 20%; /* Adjust this so it aligns nicely */
+    top: 90px; /* Right below the h1 */
+    width: 50%; /* Responsive width based on h1 */
+    height: auto; /* Keep the image’s aspect ratio */
+    max-width: 200px; /* Optional, so it doesn’t get too big */
+}
+
+@media screen and (max-width: 700px) {
+    .title-wrapper h1 {
+        font-size: 32px; /* Smaller text on smaller screens */
+    }
+
+    .title-wrapper .underline img {
+        width: 40%; /* Scale the underline down with the text */
+        max-width: 100px; /* Optional: smaller max size on mobile */
+    }
+}
+.welcome-page  .hero h1 {
+            font-family: 'Inter Semi Bold', Arial, sans-serif;
+            background: linear-gradient(0deg, #424141 0%, #666666 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 116%;
+            margin-bottom: 20px;
+            position: relative; /* Needed for the image to stay close */
+            display: inline-block;
+        }
+
+.welcome-page  .hero  h1 span {
+            display: inline-block;
+            position: relative;
+        }
+.welcome-page  .hero  h1 span::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 100%;
+            height: 6px;
+            background-color: #2463eb;
+            z-index: -1;
+        }
+.welcome-page  .hero p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            line-height: 3;
+        }
+.welcome-page .btn-primary {
+            display: inline-block;
+            background-color: #2463eb;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+.welcome-page .btn-primary:hover {
+            background-color: #2463eb;
+            transform: translateY(-2px);
+        }
+.welcome-page .hero-image {
+        margin-right: 50px;
+        }
+.welcome-page .hero-image img {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+        }
+@media (max-width: 970px) {
+    .hero-image {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+@media (max-width: 768px) {
+    .title-wrapper, .hero-image {
+        flex: 100%;
+        align-items: center;
+        justify-content: space-between;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-wrapper {
+        margin-bottom: 5px;
+    }
+    .welcome-page .underline img {
+        display: none;
+    }
+    .welcome-page  .hero h1 {
+            font-family: 'Inter Semi Bold', Arial, sans-serif;
+            background: linear-gradient(0deg, #424141 0%, #666666 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 65px;
+            font-weight: 700;
+            line-height: 116%;
+            margin-bottom: 20px;
+        }
+}
+
+/*Welcome page Features Section */
+.welcome-page .features {
+    position: relative;
+    width: 100%;
+    height: 435px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome-page .background-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(249, 250, 249, 0.81);
+    width: 100%;
+    height: 323px;
+    padding: 20px;
+}
+.welcome-page .feature_img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    padding-bottom: 250px;
+    gap:18px;
+}
+.welcome-page .feature {
+    border-radius: 84px;
+    width: 100%;
+}
+.welcome-page .description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    top: -80px;
+    left: 0;
+}
+.welcome-page .description h3{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.welcome-page .description p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: left;
+}
+/* Media query for tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .welcome-page .features {
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .welcome-page .background-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: auto;
+    }
+    .welcome-page .feature{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: static; /* Reset position */
+        width: 80px; /* Adjust image size */
+        height: auto;
+    }
+    .welcome-page .feature_img{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: inherit;
+        width: inherit;
+    }
+    .welcome-page .description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .welcome-page .description h3 {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+
+    }
+    .welcome-page .description p {
+        font-size: 16px;
+        text-align: center;
+
+    }
+}
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+    .welcome-page .description h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .welcome-page .description p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+/* Welcome page Tech Section */
+.welcome-page .tech {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 80px 0;
+    background-color: rgba(249, 250, 249, 0.81);
+    border-radius: 12px;
+}
+.welcome-page .tech img {
+    max-width: 45%;
+    border-radius: 8px;
+    padding-left: 30px;
+
+}
+.welcome-page .tech div {
+    max-width: 50%;
+    padding-right: 30px;
+}
+
+.welcome-page .tech h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.welcome-page .tech p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.welcome-page .btn-secondary {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+.welcome-page .tech .btn-primary {
+    display: block;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .welcome-page .tech {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .welcome-page .tech img {
+        max-width: 60%;
+        margin-bottom: 20px;
+                text-align: center;
+
+    }
+
+    .welcome-page .tech div {
+        max-width: 100%;
+    }
+
+    .welcome-page .tech h3 {
+        font-size: 20px;
+    }
+
+    .welcome-page .tech p {
+        font-size: 14px;
+    }
+
+    .welcome-page .btn-secondary,
+    .welcome-page .btn-primary {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 10px;
+    }
+}
+
+/* Welcome page Footer */
+.welcome-page .welcome-page-footer{
+        background-color: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+.welcome-page .footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: inherit;
+    margin-bottom: 20px;
+}
+
+.welcome-page .footer-column h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome-page .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.welcome-page .footer-column li {
+    margin-bottom: 8px;
+}
+.welcome-page .footer-column li a {
+    text-decoration: none;
+    color: #090909;
+    transition: color 0.1s ease;
+}
+
+.welcome-page .footer-column li a:hover {
+    color: #2463eb;
+}
+.welcome-page .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+.welcome-page .footer-bottom p {
+    margin: 0;
+    color: #333;
+}
+.welcome-page .social-icons {
+    display: flex;
+    gap: 10px;
+}
+.welcome-page .social-icons a {
+    margin-left: 10px;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.welcome-page .social-icons a:hover {
+    color: #2463eb; /* Or any color you prefer */
+}
+@media screen and (max-width: 768px) {
+    .welcome-page .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .welcome-page .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .welcome-page .social-icons {
+        margin-top: 10px;
+    }
+}
+/* Responsive Adjustments for Welcome page*/
+@media (max-width: 768px) {
+    .welcome-page .hero, .welcome-page .tech {
+        flex-direction: column;
+    }
+    .welcome-page .hero img, .welcome-page .tech img, .welcome-page .tech div {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .welcome-page .feature {
+        min-width: 100%;
+    }
+    .welcome-page footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/*END of Welcome page styles*/

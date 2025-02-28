@@ -1,0 +1,164 @@
+/* Basic reset and font setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f9fafb;
+}
+main{
+    font-family: "Poppins", sans-serif;
+    background: url("../static/images/SignupPageBack.png");
+    background-size: 100% 100%;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
+}
+nav{
+    height: 107px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+#header-img{
+    width: 42px;
+    height: 50px;
+
+}
+.sign-up{
+    background-color: #2463eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-container {
+    width: 571px;
+    margin: auto;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    margin-top: 120px;
+    border: 1px solid #B3B3B3;
+    margin-bottom: 100px;
+}
+
+.form-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #7e57c2; /* or your preferred focus color */
+}
+
+/* Remember Me and Forgot Password */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #3F59FF;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Submit button */
+.btn-submit {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #3F59FF;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #3F59FF;
+}
+
+/* Sign-in redirect */
+.sign-in-redirect {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.sign-in-redirect a {
+    color: #3F59FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sign-in-redirect a:hover {
+    text-decoration: underline;
+}
