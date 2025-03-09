@@ -64,11 +64,11 @@
                 <a href="#" class="forgot-password">Forgot Password?</a>
             </div>
 
-            <button type="submit" class="btn-submit">Sign Up Now</button>
+            <button type="submit" class="btn-submit">Sign In Now</button>
         </form>
 
         <p class="sign-in-redirect">
-            Have an account? <a href="#">Sign in here!</a>
+            Have an account? <a href="#">Sign up here!</a>
         </p>
     </div>
 </main>
