@@ -53,67 +53,7 @@
     </section>
 
 
-    <section class="tech">
-        <img src="static/images/image5.png" alt="BERT Model Diagram">
-        <div>
-            <h3>Our AI-Powered Plagiarism Detection Tool works using a BERT model!</h3>
-            <p>Ensure the originality of your work with our cutting-edge AI technology that detects and highlights plagiarism with remarkable accuracy.</p>
-            <a href="#" class="btn-secondary">Try Our Copy/Paste Detection Tool Today!</a>
-            <a href="#" class="btn-primary">Get Started Now!</a>
-        </div>
-    </section>
-
-<footer class="welcome-page-footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h4>Key Features</h4>
-            <ul>
-                <li><a href="#">Real-time Scanning</a></li>
-                <li><a href="#">Comprehensive Reports</a></a></li>
-                <li><a href="#">User-friendly Interface</a></li>
-                <li><a href="#">Multiple Language Support</a></li>
-                <li><a href="#">Advanced AI Technology</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>Our Products</h4>
-            <ul>
-                <li><a href="#">Check Text Plagiarism using BERT model</a></li>
-                <li><a href="#">Check source code Plagiarism</a></li>
-                <li><a href="#">Image plagiarism checker</a></li>
-                <li><a href="#">Plagiarism resources</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>About Us</h4>
-            <ul>
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">Meet the Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">News & Updates</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h4>Follow Us</h4>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-        </div>
-    </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 PlagiarismDetection. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-</footer>
+@include('layouts.footer')
 </body>
 <!-- End welcome.html -->
 
